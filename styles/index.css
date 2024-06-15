@@ -1,5 +1,6 @@
 /* Navbar section styles start */
 .NavBar {
+    max-width: 100%;
     background: var(--background, #FAF7FA);
     box-shadow: 0px 4px 4px 0px rgba(23, 17, 24, 0.10);
     margin: 0;
@@ -35,6 +36,7 @@
 
 /* Hero section styles start */
 .header-content{
+    max-width: 100%;
     height: 400px;
     background-image: url('../assets/hero-image.jpg');
     background-position: center; /* Center the image */
@@ -66,7 +68,7 @@
 }
 
 .side-container > h1 {
-    font-size: 48px;
+    font-size: 32px;
     background: var(--Purple-gradient, linear-gradient(56deg, #9707A1 -12.39%, #CA09D7 72.19%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -194,8 +196,11 @@ h1 span {
   }
   
 .imagesgrid img {
+    max-width: 100%; /* Ensure it doesn't exceed parent width */
+    max-height: 100px; /* Maximum height limit */
+    object-fit: contain; /* Maintain aspect ratio */
     margin: 10px;
-  }
+}
 
 .left-section-two{
     width: 45%;
@@ -231,7 +236,7 @@ h1 span {
     margin-top: 15px;
 }
 
-.sponsors > h3{
+.sponsors > h3 {
     margin-bottom: 15px;
 }
 
@@ -317,66 +322,117 @@ footer {
 
 /*Common Buttons styles ends*/
 
+.mobile-screen-banner{
+    display: none;
+}
+
+
 /*Media queries for responsive layout starts */
 
-@media only screen and (max-width: 900px) {
-    body {
-        font-size: 1.125rem;
+@media (min-width: 880px) and (max-width: 1200px) {
+    .shadow-container{
+        width: 65%;
     }
-    h1 {
-    font-size: 3rem;
-    font-family: "Goldman";
-    line-height: 86%;
-    
+    .side-container{
+        width: 70%;
     }
-    h1 span {
-    margin-top: .7rem;
+    .imagesgrid > img {
+        width: 200px;
+    }
+  }
+
+@media (min-width: 500px) and (max-width: 880px){
+    .NavBar{
+        display: flex;
+    }
+    .shadow-container{
+        width: 90%;
+    }
+    .header-content > .shadow-container > .side-container {
+        width: 90% !important;
+    }
+    .images-grid-section > .image-1, .images-grid-section > .image-3 {
+        width: 25%;
+    }
+    .images-grid-section > .image-2{
+        width: 40%;
+    }
+    .side-container > h1{
+        font-size: 25px;
+    }
+    .left {
+        padding: 10px 10px 10px 0px;
+    }
+    .side-container > .info{
+        font-size: 12px;
+    }
 }
+
+@media (max-width: 768px) {
+    .NavBar{
+        justify-content: center !important;
+    }
+    .bannericons{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .side-container > .start-line {
+        font-size: 15px;
+    }
+
+    .side-container > h1 {
+        font-size: 22px;
+    }
+
+    .mobile-screen-banner{
+        width: 100%;
+        height: 350px;
+        display: block;
+        background-image: url('../assets/hero-image.jpg');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+
+    .shadow-container{
+        width: 100%;
+    }
+
+    .header-content > .shadow-container > .side-container {
+        background-color: #FAF7FA;
+        width: 100% !important;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .left, .right, .left-section-two{
+        width: 100%;
+    }
+
+    .right-section-two{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 350px) {
+
     h2 {
         font-size: 1.5rem;
     }
-    h3 {
-        font-size: 1.25rem;
+
+    .container {
+        margin: 40px 30px;
     }
+    .NavBarImage > a > img{
+        width: 200px;
+    }
+
 }
 
-@media only screen and (max-width: 900px) {
-    .NavBar {
-        display: block;
-        flex-direction: row;
-        justify-content:space-between;
-    }
-    .NavBarImage img {
-        max-width: 250px;
-    }
-   
-}
-
-@media only screen and (max-width: 500px) {
-    .NavBar {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.NavBarImage img {
-    max-width: 300px;
-}
-
-
-
-
-@media only screen and (max-width: 900px) {
-    footer {
-       flex-direction: column;
-       gap: 1rem;
-       flex-direction: column-reverse;
-       align-items: center;
-       
-    }
-    .CopyrightInfo {
-       flex-direction: column;
-       gap: .5rem !important;
-    }
-   }
    
