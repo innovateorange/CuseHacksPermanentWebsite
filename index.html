@@ -36,12 +36,14 @@
                 <img src="assets/cusehacks-logo-long-purple.svg" alt="CuseHacks 2024">
             </a>
         </div>
-        <div class="NavIcons">
-            <a href="#"><img src="assets/social-media-icons/discord-icon.svg"></a>
-            <a href="#"><img src="assets/social-media-icons/devpost-icon.svg"></a>
-            <a href="#"><img src="assets/social-media-icons/instagram-icon.svg"></a>
+        <div class="NavIcons bannericons">
+            <a href="https://discord.gg/FcyyJ7VHau"><img src="assets/social-media-icons/discord-icon.svg"></a>
+            <!-- <a href="#"><img src="assets/social-media-icons/devpost-icon.svg"></a> TEMP COMMENTED TILL WE GET DEVPOST LINK -->
+            <a href="https://www.instagram.com/cusehacks/"><img src="assets/social-media-icons/instagram-icon.svg"></a>
         </div>
     </nav>
+
+    <div class="mobile-screen-banner"></div>
 
     <header class="header-content">
         <div class="shadow-container">
@@ -49,17 +51,46 @@
                 <p class="start-line">CODE. CREATE. CONNECT.</p>
                 <h1>CUSEHACKS 2024</h1>
                 <p class="info">Create something awesome at Syracuse University's only student-run hackathon this fall!</p>
-                <div class="event-details">
-                    <h3><span>WHEN <img src="assets/icons/when.svg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            WHERE <img src="assets/icons/where.svg"> </span></h3>
-                </div>
-                <div class="event-text">
-                    <p>October 5th - 6th</p>
-                    <p>Life Sciences Complex</p>
-                </div>
+                <div class="details-container">
+                    <div class="inner-container">
+                      <div class="when-container">
+                        <div class="when-inner-container"></div>
+                        <div class="text-image-container">
+                          <div class="when-text-container">When</div>
+                          <img
+                            loading="lazy"
+                            src="assets/icons/when.svg"
+                            class="img"
+                          />
+                        </div>
+                      </div>
+                      <div class="when-date-text">October 5th - 6th</div>
+                    </div>
+                    <div class="where-container">
+                      <div class="where-inner-container">
+                        <div class="where-image-text-container">
+                          <img
+                            loading="lazy"
+                            src="assets/icons/where.svg"
+                            class="img"
+                          />
+                          <div class="where-text-container">Where</div>
+                        </div>
+                        <div class="where-after-line-division"></div>
+                      </div>
+                      <div class="where-text">Life Sciences Complex</div>
+                    </div>
+                  </div>
                 <div class="ButtonGroup">
-                    <a class="PrimaryButton" href="#" target="_blank">SIGN UP <img class="icon" src="assets/icons/signup.svg"></a>
-                    <a class="SecondaryButton" href="#" target="_blank">SPONSORSHIP PACKAGE <img class="icon" src="assets/icons/sponsors.svg"></a>
+                    <a class="PrimaryButton" href="https://docs.google.com/forms/d/e/1FAIpQLSdGMxdgOncnW_qsf_-sHz4nIhUHlq0zrKjqo1IgkBAkdehVBg/viewform" target="_blank">SIGN UP <img class="icon" src="assets/icons/signup.svg"></a>
+                    <a class="SecondaryButton" href="sponsorship-package.pdf" target="_blank">SPONSORSHIP PACKAGE 
+                        <!-- Placing svg directly as color needs to be changed on hover -->
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icon">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M9.03 12.28C8.88937 12.4205 8.69875 12.4993 8.5 12.4993C8.30125 12.4993 8.11063 12.4205 7.97 12.28L5.47 9.78C5.33752 9.63783 5.2654 9.44978 5.26883 9.25548C5.27225 9.06118 5.35097 8.87579 5.48838 8.73838C5.62579 8.60097 5.81118 8.52225 6.00548 8.51882C6.19978 8.5154 6.38783 8.58752 6.53 8.72L7.75 9.94V2.25C7.75 2.05109 7.82902 1.86032 7.96967 1.71967C8.11032 1.57902 8.30109 1.5 8.5 1.5C8.69891 1.5 8.88968 1.57902 9.03033 1.71967C9.17098 1.86032 9.25 2.05109 9.25 2.25V9.94L10.47 8.72C10.5387 8.64631 10.6215 8.58721 10.7135 8.54622C10.8055 8.50523 10.9048 8.48319 11.0055 8.48141C11.1062 8.47963 11.2062 8.49816 11.2996 8.53588C11.393 8.5736 11.4778 8.62974 11.549 8.70096C11.6203 8.77218 11.6764 8.85701 11.7141 8.9504C11.7518 9.04379 11.7704 9.14382 11.7686 9.24452C11.7668 9.34522 11.7448 9.44454 11.7038 9.53654C11.6628 9.62854 11.6037 9.71134 11.53 9.78L9.03 12.28ZM2.25 14C2.05109 14 1.86032 14.079 1.71967 14.2197C1.57902 14.3603 1.5 14.5511 1.5 14.75C1.5 14.9489 1.57902 15.1397 1.71967 15.2803C1.86032 15.421 2.05109 15.5 2.25 15.5H14.75C14.9489 15.5 15.1397 15.421 15.2803 15.2803C15.421 15.1397 15.5 14.9489 15.5 14.75C15.5 14.5511 15.421 14.3603 15.2803 14.2197C15.1397 14.079 14.9489 14 14.75 14H2.25Z" fill="#CA09D7"/>
+                            </g>
+                        </svg>                            
+                    </a>
                 </div>
             </div>
         </div>
@@ -118,16 +149,30 @@
             <div class="left-section-two">
                 <h2>Get Involved</h2>
                 <div class="ButtonGroup">
-                    <a class="PrimaryButton" href="https://docs.google.com/forms/d/e/1FAIpQLSdGMxdgOncnW_qsf_-sHz4nIhUHlq0zrKjqo1IgkBAkdehVBg/viewform" target="_blank">SIGN UP <img class="icon" src="assets/icons/signup.svg"></a>
-                    <a class="SecondaryButton" href="sponsorship-package.pdf" target="_blank">SPONSORSHIP PACKAGE <img class="icon" src="assets/icons/sponsors.svg"></a>
-                    <a class="SecondaryButton" href="mailto:innovateorange@gmail.com" target="_blank">EMAIL US <img class="icon" src="assets/icons/email.svg"></a>
+                    <a class="PrimaryButton base-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdGMxdgOncnW_qsf_-sHz4nIhUHlq0zrKjqo1IgkBAkdehVBg/viewform" target="_blank">SIGN UP <img class="icon" src="assets/icons/signup.svg"></a>
+                    <a class="SecondaryButton" href="sponsorship-package.pdf" target="_blank">SPONSORSHIP PACKAGE 
+                        <!-- Placing svg directly as color needs to be changed on hover -->
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icon">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M9.03 12.28C8.88937 12.4205 8.69875 12.4993 8.5 12.4993C8.30125 12.4993 8.11063 12.4205 7.97 12.28L5.47 9.78C5.33752 9.63783 5.2654 9.44978 5.26883 9.25548C5.27225 9.06118 5.35097 8.87579 5.48838 8.73838C5.62579 8.60097 5.81118 8.52225 6.00548 8.51882C6.19978 8.5154 6.38783 8.58752 6.53 8.72L7.75 9.94V2.25C7.75 2.05109 7.82902 1.86032 7.96967 1.71967C8.11032 1.57902 8.30109 1.5 8.5 1.5C8.69891 1.5 8.88968 1.57902 9.03033 1.71967C9.17098 1.86032 9.25 2.05109 9.25 2.25V9.94L10.47 8.72C10.5387 8.64631 10.6215 8.58721 10.7135 8.54622C10.8055 8.50523 10.9048 8.48319 11.0055 8.48141C11.1062 8.47963 11.2062 8.49816 11.2996 8.53588C11.393 8.5736 11.4778 8.62974 11.549 8.70096C11.6203 8.77218 11.6764 8.85701 11.7141 8.9504C11.7518 9.04379 11.7704 9.14382 11.7686 9.24452C11.7668 9.34522 11.7448 9.44454 11.7038 9.53654C11.6628 9.62854 11.6037 9.71134 11.53 9.78L9.03 12.28ZM2.25 14C2.05109 14 1.86032 14.079 1.71967 14.2197C1.57902 14.3603 1.5 14.5511 1.5 14.75C1.5 14.9489 1.57902 15.1397 1.71967 15.2803C1.86032 15.421 2.05109 15.5 2.25 15.5H14.75C14.9489 15.5 15.1397 15.421 15.2803 15.2803C15.421 15.1397 15.5 14.9489 15.5 14.75C15.5 14.5511 15.421 14.3603 15.2803 14.2197C15.1397 14.079 14.9489 14 14.75 14H2.25Z" fill="#CA09D7"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="SecondaryButton" href="mailto:innovateorange@gmail.com" target="_blank">EMAIL US 
+                        <!-- Placing svg directly as color needs to be changed on hover -->
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icon">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M3.5 4H12.5C12.75 4 12.985 4.06 13.192 4.169L8.75 7.5C8.53363 7.66228 8.27046 7.75 8 7.75C7.72954 7.75 7.46637 7.66228 7.25 7.5L2.808 4.169C3.015 4.06 3.251 4 3.5 4ZM2.001 5.438L2 5.5V10.5C2 10.8978 2.15804 11.2794 2.43934 11.5607C2.72064 11.842 3.10218 12 3.5 12H12.5C12.8978 12 13.2794 11.842 13.5607 11.5607C13.842 11.2794 14 10.8978 14 10.5V5.5L13.999 5.438L9.65 8.7C9.17399 9.05701 8.59502 9.25 8 9.25C7.40498 9.25 6.82601 9.05701 6.35 8.7L2.001 5.438ZM0.5 5.5C0.5 4.70435 0.81607 3.94129 1.37868 3.37868C1.94129 2.81607 2.70435 2.5 3.5 2.5H12.5C13.2956 2.5 14.0587 2.81607 14.6213 3.37868C15.1839 3.94129 15.5 4.70435 15.5 5.5V10.5C15.5 11.2956 15.1839 12.0587 14.6213 12.6213C14.0587 13.1839 13.2956 13.5 12.5 13.5H3.5C2.70435 13.5 1.94129 13.1839 1.37868 12.6213C0.81607 12.0587 0.5 11.2956 0.5 10.5V5.5Z" fill="#CA09D7"/>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="right-section-two">
                 <div class="images-grid-section">
-                    <img class="image-1" src="assets/participant-photos/DSC00343 Large.png">
-                    <img class="image-2" src="assets/participant-photos/DSC00361 Large.png">
-                    <img class="image-3" src="assets/participant-photos/IMG_7259(2) Large.png">
+                    <img class="image-1" src="assets/participant-photos/presenting-photo.jpeg">
+                    <img class="image-2" src="assets/participant-photos/three-people-photo.jpeg">
+                    <img class="image-3" src="assets/participant-photos/otto-photo.jpeg">
                 </div>
             </div>
         </div>
@@ -135,9 +180,9 @@
 
     <footer>
         <div class="NavIcons">
-            <a href="#"><img src="assets/social-media-icons/discord-icon.svg"></a>
-            <a href="#"><img src="assets/social-media-icons/devpost-icon.svg"></a>
-            <a href="#"><img src="assets/social-media-icons/instagram-icon.svg"></a>
+            <a href="https://discord.gg/FcyyJ7VHau"><img src="assets/social-media-icons/discord-icon.svg"></a>
+            <!-- <a href="#"><img src="assets/social-media-icons/devpost-icon.svg"></a> TEMP COMMENTED TILL WE GET DEVPOST LINK -->
+            <a href="https://www.instagram.com/cusehacks/"><img src="assets/social-media-icons/instagram-icon.svg"></a>
         </div>
     </footer>
 
