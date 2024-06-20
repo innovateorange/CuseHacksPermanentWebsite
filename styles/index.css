@@ -604,7 +604,23 @@ footer {
     }
 }
 
+@media (max-width: 375px) {
+    .header-content > .shadow-container > .side-container {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+}
+
+@media (max-width: 440px){
+    .details-container{
+        font-size: 0.75rem;
+    }
+}
+
 @media (max-width: 350px) {
+
+    .details-container{
+        font-size: 0.7rem;
+    }
 
     h2 {
         font-size: 1.5rem;
@@ -616,7 +632,8 @@ footer {
     .NavBarImage > a > img{
         width: 12.5rem;
     }
-
 }
+
+
 
    
