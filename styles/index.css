@@ -15,6 +15,9 @@
     gap: 2.5rem;
     align-items: baseline;
 }
+.NavIcons img {
+    cursor: pointer;
+}
 
 .NavIcons a {
     display: block;
@@ -49,7 +52,7 @@
 .shadow-container{
     width: 55%;
     height: 25rem;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 64%, rgba(0, 0, 0, 0.06) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 70%, rgba(0, 0, 0, 0.06) 100%);
 }
 
 .header-content > .shadow-container > .side-container {
@@ -68,7 +71,7 @@
 }
 
 .side-container > h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     background: var(--Purple-gradient, linear-gradient(56deg, #9707A1 -12.39%, #CA09D7 72.19%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -565,7 +568,9 @@ footer {
 }
 
 @media (max-width: 500px) {
-
+    .side-container > h1 {
+        font-size: 2rem;
+    }
     .shadow-container, .header-content, .side-container {
         height: 23rem !important;
     }
@@ -607,7 +612,12 @@ footer {
     }
 }
 
-
+@media (max-width: 368px) {
+    .when-date-text, .where-text {
+        font-size: .9rem;
+    }
+}
+ 
 @media (max-width: 350px) {
 
     .container {
