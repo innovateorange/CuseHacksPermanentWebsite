@@ -489,6 +489,14 @@ footer {
 
 /*Media queries for responsive layout starts */
 
+@media (min-width:1600px) {
+    .imagesgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: fit-content;
+    }
+}
+
 @media (max-width:600px) {
     .where-container{
         padding: 0rem 0rem;
