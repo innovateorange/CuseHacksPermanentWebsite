@@ -547,7 +547,7 @@ footer {
     }
     .header-content > .shadow-container > .side-container {
         width: 90% !important;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
     }
     .container {
         margin: 2rem 1rem;
@@ -617,7 +617,7 @@ footer {
         /* padding: 2rem 1rem 0 1rem; */
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 2rem;
+        padding-top: 1.5rem;
         padding-bottom: 0;
     }
 
@@ -644,7 +644,7 @@ footer {
     }
 
     .header-content > .shadow-container > .side-container {
-        padding: 2rem 0.5rem;
+        padding: 1.5rem 0.5rem;
     }
 
     .NavBarImage > a > img{
