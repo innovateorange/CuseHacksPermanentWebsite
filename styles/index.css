@@ -596,9 +596,8 @@ footer {
         font-size: 2rem;
     }
     .shadow-container, .header-content, .side-container {
-        height: 21rem !important;
+        height: 23rem !important;
     }
-
     .inner-container {
         padding: 0rem;
     }
