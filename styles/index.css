@@ -38,6 +38,11 @@
 
 
 /* Hero section styles start */
+
+.side-container {
+    /* display: flex;
+    flex-direction: column; */
+}
 .header-content{
     max-width: 100%;
     height: 25rem;
@@ -150,6 +155,11 @@ h1 span {
     display: inline-block;
     font-family: "Goldman";
     font-weight: 400;
+}
+.extra-details {
+    font-weight: 300;
+    text-align: center !important;
+    margin-top: .25rem !important;
 }
 
 /* Hero section styles ends */
