@@ -33,6 +33,15 @@
 
 .NavBarImage {
     width: fit-content;
+    background-image: url("../assets/cusehacks-logo-long-purple.svg");
+    height: 40px;
+    width: 347px;
+}
+
+.NavBarImage a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .NavLinks {
@@ -50,6 +59,49 @@
     text-decoration: none;
     color: #000000;
 }
+
+.toolbar-icon{
+    padding: 1rem;
+}
+
+.divider {
+    width: 1px;
+    background-color: #ccc;
+    display: inline-block;
+    height: auto;
+    align-self: stretch;
+}
+
+.links-toolbar{
+    align-items: center; 
+    background-color: var(--background, #FAF7FA);;
+    z-index: 10;
+    position: absolute; /* Positions it relative to the nearest positioned ancestor */
+    top: 88px; /* Puts it at the top */
+    right: 0;
+    border-bottom-left-radius: 1rem;
+    display: none;
+}
+
+.toolbar-icons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.toolbar-icons img {
+    cursor: pointer;
+}
+
+.toolbar-icons a {
+    display: block;
+    border-radius: 50%; /* Optional: for rounded icons */
+    text-align: center;
+    line-height: 1.5rem; /* Center the icon vertically */
+    font-size: 1.125rem; /* Placeholder font size */
+    color: #fff; /* Placeholder text color */
+}
+
 
 /* Navbar section styles ends */
 
@@ -592,6 +644,14 @@ footer {
     .card {
         width: calc(50% - 24px) !important;
     }
+    .links-toolbar{
+        display: block;
+    }
+    .NavBarImage{
+        background-image: url("../assets/mobile-logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 @media(max-width: 550px){
@@ -678,7 +738,7 @@ footer {
 
 @media (max-width: 768px) {
     .NavBar{
-        justify-content: center !important;
+        justify-content: space-between !important;
     }
     .bannericons{
         display: none;
@@ -686,8 +746,8 @@ footer {
     .NavBar{
         padding: 1.5rem;
     }
-    .navigation-links {
-        display: none;
+    .navigation-links{
+        padding: 0px;
     }
 }
 
