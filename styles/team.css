@@ -246,6 +246,7 @@ h1 span {
 }
 
 .designation{
+    margin-top: 8px;
     text-transform: capitalize;
     font-size: 2rem;
     color: #686468;
