@@ -36,6 +36,7 @@
     background-image: url("../assets/cusehacks-logo-long-purple.svg");
     height: 40px;
     width: 347px;
+    background-repeat: no-repeat;
 }
 
 .NavBarImage a{
